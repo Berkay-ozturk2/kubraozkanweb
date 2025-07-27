@@ -1,0 +1,203 @@
+/* ========== Genel Ayarlar ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: white;
+  min-height: 100vh;
+}
+
+/* ========== Navigation Bar ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #1a1a2e;
+}
+
+.logo h2 {
+  color: #c084fc;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c084fc;
+}
+
+.star.button {
+  background-color: #c084fc;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ========== Ana Sayfa (Home Section) ========== */
+.home-section {
+  padding: 50px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.greeting {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.my-name {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.pink {
+  color: #c084fc;
+}
+
+.title {
+  font-size: 32px;
+  color: #c084fc;
+  margin-top: 30px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+
+.art-icon,
+.art-icon2 {
+  font-size: 80px;
+}
+
+/* ========== Hakkımda Bölümü ========== */
+.about-me-section {
+  padding: 100px 50px;
+  background-color: #16213e;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.long-text-section {
+  flex: 2;
+}
+
+.exp-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.long-text-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #c084fc;
+}
+
+/* ========== Sosyal Medya Bölümü ========== */
+.social-media {
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #1a1a2e;
+}
+
+.social-media p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.my-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.my-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.my-links li a:hover {
+  color: #c084fc;
+}
+
+/* ========== Responsive Tasarım ========== */
+@media (max-width: 768px) {
+  .home-content,
+  .about-me-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .image-section {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    margin-top: 30px;
+  }
+}
